@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo.az</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- nav start  -->
+    <nav id="nav-mobile">
+        <div class="container">
+            <div id="navbar-mob">
+                <ul>
+                    <li><a href="#">TURBO.AZ</a></li>
+                    <li><a href="#">BINA.AZ</a></li>
+                    <li><a href="#">TAP.AZ</a></li>
+                </ul>
+                <button id="add-btn-mob">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <nav id="nav-desktop">
+        <div id="navbar-desk">
+            <div class="container">
+                <div id="nav-top">
+                    <ul id="sponsorlar">
+                        <li><a href="#">Tap.az</a></li>
+                        <li><a href="#">Bina.az</a></li>
+                        <li><a href="#">Boss.az</a></li>
+                    </ul>
+                    <ul id="destek">
+                        <li>Dəstək: (012) 505-77-55</li>
+                        <li><a href="#">Yardım</a></li>
+                        <li><a href="#">RU</a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i> Seçilmişlər</a></li>
+                        <li><a href="#"><i class="fas fa-user-circle"></i> Giriş</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="nav-bottom">
+                <div class="container">
+                    <div class="menu">
+                        <div id="menu-left">
+                            <a href="index.htm" id="logo">TURBO.AZ</a>
+                            <ul id="nav-menu">
+                                <li><a href="#" class="nav-links">Bütün elanlar</a></li>
+                                <li><a href="#" class="nav-links">Salonlar</a></li>
+                                <li><a href="#" class="nav-links">Moto</a></li>
+                                <li><a href="#" class="nav-links">Ehtiyyat hissələr və aksesuarlar</a></li>
+                                <li><a href="#" class="nav-links">İcarə</a></li>
+                            </ul>
+                        </div>
+                        <button id="add-btn-des">
+                            <i class="fas fa-plus"></i>
+                            <span>Yeni elan</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end  -->
+    <!-- header start  -->
+    <header id="head-mob">
+        <div id="marka-page">
+            <div class="container">
+                <div class="title-marka">
+                    <button onclick="markaPageBtn()">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <h2>Marka</h2>
+                </div>
+                <div class="search-marka">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Məsələn, BMW" />
+                </div>
+                <h5>Populyar</h5>
+                <div class="marka-list">
+                    <ul id="ibrahim-list"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="filter-page">
+            <div class="container">
+                <div class="filter-title">
+                    <button onclick="filterPageBtn()">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <h2>
+                        Filtrlər
+                    </h2>
+                    <button>
+                        Sıfırla
+                    </button>
+                </div>
+                <select id="filter-city">
+                    <option value="Şəhər">Şəhər</option>
+                </select>
+                <h5></h5>
+                <div id="marka-flex">
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/mercedes-benz-9@54x.png" />
+                        </div>
+                        <p>Mercedes</p>
+                    </div>
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/Bitmap@54x.png" />
+                        </div>
+                        <p>LADA</p>
+                    </div>
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/hyundai-motor-company-2 copy@54x.png" />
+                        </div>
+                        <p>Hyundai</p>
+                    </div>
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/1280px-KIA_logo3.svg@54x.png" />
+                        </div>
+                        <p>Kia</p>
+                    </div>
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/toyota copy 3@54x.png" />
+                        </div>
+                        <p>Toyota</p>
+                    </div>
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/1200px-BMW_logo_(gray).svg@54x.png" />
+                        </div>
+                        <p>BMW</p>
+                    </div>
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/opel-2@54x.png" />
+                        </div>
+                        <p>Opel</p>
+                    </div>
+                    <div class="marca-card">
+                        <div class="marca-img">
+                            <img width="30px" src="img/Group 15@54x.png" />
+                        </div>
+                        <p>Chevrolet</p>
+                    </div>
+                </div>
+                <button id="butun-btn">Bütün markaları göstər</button>
+                <div class="filter-btns">
+                    <button>Hamısı</button>
+                    <button>Yeni</button>
+                    <button>Sürülmüş</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="filter-mob">
+                <button class="flt-btn-mob" onclick="markaPageBtn()">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="-5 -5 29 23" x="675" y="340"><path d="M18.89 4.023a.495.495 0 00-.376-.174h-1.85c-.456-1.164-1.05-2.304-1.726-2.734-2.337-1.487-8.538-1.487-10.875 0-.676.43-1.269 1.572-1.727 2.734H.486a.492.492 0 00-.376.174.456.456 0 00-.1.392l.274 1.283a.483.483 0 00.476.375h.548A3.113 3.113 0 00.52 8.148c-.004.918.357 1.748 1.016 2.335.007.006.015.01.021.016v1.796c0 .388.327.705.73.705h1.706a.72.72 0 00.73-.705v-.722h9.554v.722c0 .388.327.705.73.705h1.706a.72.72 0 00.73-.705v-1.76a3.094 3.094 0 001.038-2.323 3.107 3.107 0 00-.825-2.14h.584a.48.48 0 00.476-.376l.275-1.282a.462.462 0 00-.1-.391zM4.865 2.293c1.863-1.186 7.409-1.186 9.27 0 .363.23.828 1.158 1.255 2.294H3.611c.425-1.136.891-2.063 1.253-2.294zM2.682 8.325c0-.767.643-1.387 1.435-1.387.794 0 1.436.62 1.436 1.387S4.91 9.713 4.117 9.713c-.792 0-1.435-.621-1.435-1.388zm12.22 1.388c-.793 0-1.436-.621-1.436-1.388 0-.767.643-1.387 1.436-1.387.793 0 1.435.62 1.435 1.387s-.643 1.388-1.435 1.388z" fill="#CA1016"/></svg>
+                        Bütün markalar
+                    </span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <button onclick="filterPageBtn()" class="flt-btn-mob">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="27" viewBox="-5 -5 29 27" x="675" y="313"><path d="M9.216 8.687v6.891A.42.42 0 009.64 16a.42.42 0 00.422-.422v-6.89a2.145 2.145 0 001.72-2.1 2.145 2.145 0 00-1.72-2.099V1.422A.42.42 0 009.639 1a.42.42 0 00-.423.422v3.067a2.145 2.145 0 00-1.72 2.1c0 1.033.738 1.902 1.72 2.098zm.423-3.395c.716 0 1.298.581 1.298 1.296a1.298 1.298 0 01-2.597 0c0-.715.582-1.296 1.299-1.296zm5.573 6.931v3.355a.42.42 0 00.422.422.42.42 0 00.423-.422v-3.355a2.145 2.145 0 001.72-2.099 2.145 2.145 0 00-1.72-2.099V1.422A.42.42 0 0015.634 1a.42.42 0 00-.422.422v6.606a2.145 2.145 0 00-1.72 2.1c0 1.037.74 1.899 1.72 2.095zm.422-3.395c.717 0 1.299.581 1.299 1.296a1.298 1.298 0 01-2.597 0 1.3 1.3 0 011.298-1.296zM3.22 12.224v3.354a.42.42 0 00.423.422.42.42 0 00.422-.422v-3.354a2.145 2.145 0 001.72-2.098 2.145 2.145 0 00-1.72-2.1V1.423A.42.42 0 003.643 1a.42.42 0 00-.422.422V8.03a2.139 2.139 0 000 4.194zm.423-3.395c.716 0 1.298.581 1.298 1.297a1.298 1.298 0 01-2.596 0c0-.716.581-1.297 1.298-1.297z" fill="#CA1016" stroke="#CA1016" stroke-width=".8"/></svg>
+                        Filtrlər
+                    </span>
+                </button>
+            </div>
+            <button class="moto-btn">
+                <span>Moto</span>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </header>
+    <header id="head-desk">
+        <div class="container">
+            <div id="filter-desk">
+                <div class="col-lg-3">
+                    <select oninput="ModelSec()" id="marka-desk"  class="head-acc">
+                        <option value="Marka">Marka</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <select id="model-desk" class="head-acc model-desk">
+                        <option value="Model">Model</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <div id="vezyet-btn">
+                        <button onclick="VbtnColor(0)" class="vezyet-btn-active">Hamısı</button>
+                        <button onclick="VbtnColor(1)">Yeni</button>
+                        <button onclick="VbtnColor(2)">Sürülmüş</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <select id="city-desk" class="head-acc">
+                        <option value="Şəhər">Şəhər</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <div id="price-desk">
+                        <input id="min-price" type="text" placeholder="Qiymət, min." value=""/>
+                        <input id="max-price" type="text" placeholder="maks." value="" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="valyuta-desk">
+                        <select id="val" class="head-acc">
+                            <option value="">VAL</option>
+                        </select>
+                        <button onclick="valBtnsactive(0)">Kredit</button>
+                        <button onclick="valBtnsactive(1)">Barter</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <select id="ban-desk" class="head-acc">
+                        <option value="Ban növü">Ban növü</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <div id="year-desk">
+                        <select id="year-min-btn" class="head-acc">
+                            <option value="">il, min.</option>
+                        </select>
+                        <select id="year-max-btn" class="head-acc">
+                            <option value="">maks.</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="nav-accordion">
+                    <div class="col-lg-3">
+                        <div id="reng-desk" class="head-acc">
+                            Rəng
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div id="yanacaq-desk" class="head-acc">
+                            Yanacaq növü
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div id="oturucu-desk" class="head-acc">
+                            Ötürücü
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div id="squtu-desk" class="head-acc">
+                            Sürətlər qutusu
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="hecm-desk">
+                            <div class="hecm-min">
+                                Həcm (sm<sup>3</sup>), min. <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="hecm-max">
+                                maks. <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="ag-desk">
+                            <input class="ag-min" type="text" placeholder="Güc (a. g.), min." />
+                            <input type="text" placeholder="maks." />
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="yurus-desk">
+                            <input class="yurus-min" type="text" placeholder="Yürüş (km), min." />
+                            <input type="text" placeholder="maks." />
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div id="sahib-btn">
+                            <button>Hamısı</button>
+                            <button>Salonlar</button>
+                            <button>Şəxsi</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div id="sahib-say-desk" class="head-acc">
+                            Sahiblərin sayı
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div id="yer-say-desk" class="head-acc">
+                            Yerlərin sayı
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div id="bazar-desk" class="head-acc">
+                            Hansı bazar üçün yığılıb
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="yalanci-btn">Vuruğu yoxdur</div>
+                    <div class="yalanci-btn">Rənglənməyib</div>
+                    <div class="yalanci-btn">Yalnız qəzalı avtomobillər</div>
+                </div>
+                <div id="header-bottom">
+                    <p>Bu gün : <a href="#">1690 yeni elan</a></p>
+                    <div>
+                        <button class="sifirla-btn">Sıfırla</button>
+                        <button onclick="showElan()" class="nav-acc-ac">Daha çox filtr <i class="fas fa-chevron-down"></i></button>
+                        <button class="show-elan" onclick="showFilter()">Elanları göstər</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end  -->
+    <!-- main start  -->
+    <main>
+        <div class="container">
+            <div id="main"></div>
+        </div>
+    </main>
+    <!-- main end  -->
+    <!-- footer strat  -->
+    <footer>
+        <div class="container">
+            <p>Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş <br> elanların məzmununa görə məsuliyyət daşımır.</p>
+        </div> 
+    </footer>
+    <!-- footer end  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
